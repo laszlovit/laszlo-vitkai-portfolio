@@ -1,0 +1,16 @@
+---
+import { IHeroProps } from "../../types";
+
+const { name, about } = Astro.props as IHeroProps;
+---
+
+<section class="animate-on-scroll opacity-0 ">
+    <a aria-label="Home" class="block h-16 w-16 origin-left pointer-events-auto mt-28 mb-8"  href="/">
+        <img src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&w=128&q=75" alt="Photo of me." class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16">
+    </a>
+    <p class="dark:text-light">Hey, I’m</p>
+    <h1>{name}</h1>
+    <p class="dark:text-light text-lg mb-16">
+        {about}
+    </p>
+</section>

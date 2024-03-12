@@ -1,0 +1,20 @@
+---
+import { info } from "../data/info";
+import { getCollection } from "astro:content";
+
+import Layout from '../layouts/Layout.astro';
+import Hero from "../components/home/Hero.astro";
+import Experience from "../components/home/Experience.astro";
+import ProjectList from "../components/projects/ProjectList.astro";
+
+const allProjects = await getCollection("projects");
+---
+
+<Layout>
+	<Hero name={info.name} about={info.about} />
+	<Experience title={"EXPERIENCE"} details={info.experience} />
+	<Experience title={"EDUCATION"} details={info.education} />
+	<div class="animate-on-scroll opacity-0">
+		<ProjectList projects={allProjects}/>
+	</div>
+</Layout>

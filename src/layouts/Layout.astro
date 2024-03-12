@@ -1,0 +1,50 @@
+---
+export interface Props {
+	title?: string;
+	description?: string;
+	image?: string;
+}
+
+const {
+	title = "László Vitkai - Web Developer",
+	description = "A portfolio website built with Astro.js, showcasing my skills and projects in a minimal and responsive design.",
+	image = "/og-image.png",
+} = Astro.props;
+
+import NavBar from "../components/general/NavBar.astro";
+import "../styles/style.css";
+import Footer from "../components/general/Footer.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description" content={description}/>
+		<meta name="viewport" content="width=device-width"/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+		<meta name="generator" content={Astro.generator}/>
+		<title>{title}</title>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content={Astro.url}/>
+		<meta property="og:title" content={title}/>
+		<meta property="og:description" content={description}/>
+		<meta property="og:image" content=`https://laszlovitkai.dev${image}`/>
+		<meta property="og:image:alt" content={description}/>
+		<meta property="twitter:card" content="summary_large_image"/>
+		<meta property="twitter:url" content={Astro.url}/>
+		<meta property="twitter:title" content={title}/>
+		<meta property="twitter:description" content={description}/>
+		<meta property="twitter:image" content={image}/>
+		<meta property="twitter:image:alt" content={description}/>
+		<meta name="theme-color" content="#FFFFFF" />
+	</head>
+	<body>
+	<NavBar />
+	<main class="container">
+		<slot />
+	</main>
+	<Footer />
+	<script  src="/src/js/main.js"/>
+	</body>
+</html>
