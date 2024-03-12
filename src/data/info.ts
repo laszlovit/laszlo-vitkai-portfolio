@@ -7,7 +7,7 @@ export const info = {
 
     experience: [
         {
-            name: "Marketing Puzzle",
+            name: "Marketing Puzzle - Internship",
             location: "Nyíregyháza, Hungary",
             startDate: "2023",
             endDate: "",

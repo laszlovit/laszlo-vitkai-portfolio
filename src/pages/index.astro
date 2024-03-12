@@ -14,7 +14,7 @@ const allProjects = await getCollection("projects");
 	<Hero name={info.name} about={info.about} />
 	<Experience title={"EXPERIENCE"} details={info.experience} />
 	<Experience title={"EDUCATION"} details={info.education} />
-	<div class="animate-on-scroll opacity-0">
+	<section id="projects" class="animate-on-scroll opacity-0">
 		<ProjectList projects={allProjects}/>
-	</div>
+	</section>
 </Layout>
