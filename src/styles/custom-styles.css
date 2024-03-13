@@ -32,3 +32,10 @@
         background-position: 0% 50%;
     }
 }
+
+img + em { /* Style img captions in the case studies posts */
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+

@@ -1,6 +1,6 @@
 ---
 date: 08/10/2023
-featured: false
+featured: true
 image: ../../assets/projects_mp_mockup_main.jpg
 icon: ../../assets/logo_marketingpuzzle.svg
 title: Marketing Puzzle
@@ -10,12 +10,16 @@ link: https://marketingpuzzle.hu
 
 ## Introduction
 
-In today's digital world, a website is often a potential client's first impression of a business. Marketing Puzzle, a
+  In today's digital world, a website is often a potential client's first impression of a business. <a href="https://marketingpuzzle.hu/" target="_blank">Marketing Puzzle</a>
+  , a
 Hungarian marketing powerhouse, was struggling with an outdated website that no longer reflected their brand's
 innovation and capabilities. Their online presence failed to capture their expertise and the cutting-edge solutions they
 provide to clients. Slow loading pages, an old-school design, and a lack of essential functionalities like a content
 management system (CMS) were hindering their ability to engage their target audience. The outdated look and feel were
 not up to today's standards, negatively impacting their ability to attract new business.
+
+![Mockup of the website home page](../../assets/mp_old_website_screenshot.jpg "Marketing Puzzle old website screenshot")
+*The old Marketing Puzzle website above the fold section*
 
 ## My role & Objectives
 

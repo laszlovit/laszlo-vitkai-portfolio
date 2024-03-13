@@ -1,6 +1,6 @@
 ---
 date: 08/10/2021
-featured: false
+featured: true
 image: ../../assets/projects_tmt_mockup_main.jpg
 icon: ../../assets/logo_tmt.svg
 title: Több mint Tüzép

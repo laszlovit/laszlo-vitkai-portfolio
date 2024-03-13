@@ -1,21 +1,24 @@
 ---
 import type { IHeroProps } from "../../types";
+import { Image } from 'astro:assets';
+import myPhoto from "/src/assets/home_hero.jpg";
 
 const { name, about } = Astro.props as IHeroProps;
 ---
 
 <section class="animate-on-scroll opacity-0 mt-28">
-    <a aria-label="Home" class="block h-16 w-16 origin-left pointer-events-auto mb-4"  href="/">
-        <img src="https://spotlight.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&w=128&q=75" alt="Photo of me." class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16">
-    </a>
     <p class="dark:text-light">Hey, I’m László Vitkai, a <strong>Web Developer</strong>.</p>
     <h1 class="main-heading">Imagine. Build. Refine.</h1>
     <p class="dark:text-light text-lg mb-8">
-        {about}
+        My coding journey started in high school, building websites for <span><a href="/projects/early-projects-big-lessons" class="text-teal-500 underline">small businesses</a></span>. While no-code tools got me started, I quickly hit their limits. Bloated code, slow websites – I wanted better. That sparked my passion for real coding, letting me customize and create unique features. Today, I'm in a web development bachelor's program, honing my skills with <span class="text-teal-500">Javascript</span>, <span class="text-teal-500">Tailwind CSS</span> and <span class="text-teal-500">GSAP</span>.  I'm always expanding my toolbox, currently diving into <span class="text-teal-500">Typescript</span> and the <span class="text-teal-500">Vue framework</span>. I'm passionate about building lightning-fast, SEO-optimized, accessible websites.
     </p>
     <div class="flex gap-x-6 mb-16">
         <a aria-label="Contact" href="mailto:work@laszlovitkai.dev" class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-800 font-semibold text-zinc-100 hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70 flex-noner">
             Contact Me
         </a>
     </div>
+    <Image src={myPhoto} alt="A photo about me coding." class="mt-40 w-full object-cover" />
 </section>
+<div>
+
+</div>

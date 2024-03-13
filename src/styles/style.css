@@ -39,3 +39,10 @@
         @apply dark:text-light flex items-center border border-dark dark:border-light p-4 rounded-lg justify-center;
     }
 }
+
+@media (min-width: 640px) {
+    h1 {
+        font-size: 6rem;
+        line-height: 1.2;
+    }
+}
