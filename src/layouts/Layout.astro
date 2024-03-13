@@ -38,6 +38,25 @@ import Footer from "../components/general/Footer.astro";
 		<meta property="twitter:image" content={image}/>
 		<meta property="twitter:image:alt" content={description}/>
 		<meta name="theme-color" content="#FFFFFF" />
+		<!-- preload fonts -->
+		<link
+			rel="preload"
+			href="/fonts/Inter-Regular.woff2"
+			as="font"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/Inter-Bold.woff2"
+			as="font"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/Outfit-SemiBold.woff2"
+			as="font"
+			crossorigin
+		/>
 	</head>
 	<body>
 	<NavBar />
