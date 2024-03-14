@@ -1,5 +1,5 @@
 ---
-date: 08/10/2023
+date: 03/13/2024
 featured: true
 image: ../../assets/projects_mp_mockup_main.jpg
 icon: ../../assets/logo_marketingpuzzle.svg

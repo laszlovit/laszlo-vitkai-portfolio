@@ -8,6 +8,7 @@ import Experience from "../components/home/Experience.astro";
 import ProjectList from "../components/projects/ProjectList.astro";
 
 const allProjects = await getCollection("projects");
+const featuredProjects = allProjects.filter((project) => project.data.featured);
 ---
 
 <Layout>
@@ -15,6 +16,7 @@ const allProjects = await getCollection("projects");
 	<Experience title={"EXPERIENCE"} details={info.experience} />
 	<Experience title={"EDUCATION"} details={info.education} />
 	<section id="projects" class="animate-on-scroll opacity-0">
-		<ProjectList projects={allProjects}/>
+		<ProjectList projects={featuredProjects}/>
+
 	</section>
 </Layout>
