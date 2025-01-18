@@ -1,11 +1,11 @@
 ---
-date: 03/13/2024
-featured: false
-image: ../../assets/projects_mp_mockup_main.jpg
+date: 01/17/2025
+featured: true
+image: ../../assets/pazonybau-mockup.jpeg
 icon: ../../assets/logo_marketingpuzzle.svg
-title: Marketing Puzzle
+title: PazonyBau
 description: Collaboration is a key component of many creative endeavors, and music production is no exception.
-link: https://marketingpuzzle.hu
+link: https://www.pazonybau.hu/
 ---
 
 ## Introduction

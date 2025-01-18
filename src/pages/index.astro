@@ -1,22 +1,21 @@
 ---
-import { info } from "../data/info";
-import { getCollection } from "astro:content";
+import { info } from '../data/info';
+import { getCollection } from 'astro:content';
 
 import Layout from '../layouts/Layout.astro';
-import Hero from "../components/home/Hero.astro";
-import Experience from "../components/home/Experience.astro";
-import ProjectList from "../components/projects/ProjectList.astro";
+import Hero from '../components/home/Hero.astro';
+import Experience from '../components/home/Experience.astro';
+import ProjectList from '../components/projects/ProjectList.astro';
 
-const allProjects = await getCollection("projects");
+const allProjects = await getCollection('projects');
 const featuredProjects = allProjects.filter((project) => project.data.featured);
 ---
 
 <Layout>
-	<Hero name={info.name} about={info.about} />
-	<Experience title={"EXPERIENCE"} details={info.experience} />
-	<Experience title={"EDUCATION"} details={info.education} />
-	<section id="projects" class="animate-on-scroll opacity-0">
-		<ProjectList projects={featuredProjects}/>
-
-	</section>
+  <Hero name={info.name} about={info.about} />
+  <Experience title={'EXPERIENCE'} details={info.experience} />
+  <Experience title={'EDUCATION'} details={info.education} />
+  <section id="projects" class="animate-on-scroll opacity-0">
+    <ProjectList projects={featuredProjects} isMore />
+  </section>
 </Layout>

@@ -7,10 +7,23 @@ export const info = {
 
   experience: [
     {
+      name: "Grumsen Development ApS - Internship",
+      location: "Esbjerg, Denmark",
+      startDate: "Jul 2024",
+      endDate: "Oct 2024",
+      description: [
+        "- Focused on the front-end development of Captino.io, a SaaS platform for digital marketing.",
+        "- Responsiveness improvements, extending or adding new features, and bug fixes.",
+        "- Optimized data tables responsiveness and accessibility.",
+        "- Extended the export functionality for the Users and Tenants tables to include export to Excel.",
+        "- Created an extensive, reusable typography class system in Tailwind CSS, which formats any written content uniformly.",
+      ],
+    },
+    {
       name: "Marketing Puzzle - Internship",
       location: "Nyíregyháza, Hungary",
       startDate: "2023",
-      endDate: "",
+      endDate: "2024",
       description: [
         "- Developed responsive websites utilizing semantic HTML, Tailwind CSS, and JavaScript.",
         "- Following the most effective SEO practices to enhance website visibility in search endine results.",
@@ -27,8 +40,8 @@ export const info = {
       name: "Erhvervsakademi SydVest",
       location: "Esbjerg, Denmark",
       startDate: "2023",
-      endDate: "Present",
-      description: ["Web Development Bachelor Degree"],
+      endDate: "2025",
+      description: ["Proffesional Bachelor in Web Development"],
     },
     {
       name: "Erhvervsakademi SydVest",

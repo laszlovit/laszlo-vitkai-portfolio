@@ -1,17 +1,17 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
-import ProjectList from "../../components/projects/ProjectList.astro";
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import ProjectList from '../../components/projects/ProjectList.astro';
 
-const allProjects = await getCollection("projects");
+const allProjects = await getCollection('projects');
 ---
 
 <Layout
-        title="Projects - Laszlo Vitkai"
-        description="All the projects that I have worked on before"
+  title="Projects - Laszlo Vitkai"
+  description="All the projects that I have worked on before"
 >
-        <div class="animate-on-scroll opacity-0">
-            <h1 class="leading-tight">Projects</h1>
-            <ProjectList projects={allProjects} />
-        </div>
+  <div class="animate-on-scroll opacity-0">
+    <h1 class="leading-tight">Projects</h1>
+    <ProjectList projects={allProjects} />
+  </div>
 </Layout>
